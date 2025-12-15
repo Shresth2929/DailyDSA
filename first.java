@@ -1,0 +1,45 @@
+
+package ArrQuestions;
+// left rotate by one space 
+public class first {
+
+
+    public static void rotatebyOnePlace(int arr[]){
+        
+// time comp=O(n);
+// Space comp=O(n);
+// extra Space used O(1)
+
+
+        int temp=arr[0];
+        int n=arr.length;
+        for(int i=1;i<n;i++){   
+            arr[i-1]=arr[i];
+        }
+        arr[n-1]=temp;
+    }
+
+    public static void printArr(int arr[] ) {
+        int n=arr.length;
+        for(int i=0;i<n;i++){
+            System.out.print(arr[i]+" ");
+        }
+        
+    }
+
+    public static void rotatebyNplaces(int arr[], int d){
+
+    } 
+
+    public static void main(String args[]){
+        int arr[]={1,2,3,4,5};
+        rotatebyOnePlace(arr);
+        printArr(arr);
+
+
+
+
+
+
+    }
+}
